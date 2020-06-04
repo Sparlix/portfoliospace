@@ -1,0 +1,112 @@
+html, body {margin:0;padding:0;height:100%;}
+body{
+    background-color: rgb(228, 228, 228);
+}
+.main{
+   display: flex;
+   height: 100%;
+
+   .left-main{
+
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: left;
+ 
+    width: 40%;
+   }
+   .right-main{
+    
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    width: 60%;
+    .container{
+
+        margin-top: 30%;
+        a{
+            text-decoration: none;
+        }
+        h1{
+            color: rgb(213, 221, 236);
+            justify-content: center;
+            display: flex;
+            text-shadow: 2px 3px 20px rgba(255, 255, 255, 0.404);
+            font-family: Prospekt;
+            letter-spacing: 3px;
+            font-size: 60px;
+            &:hover{
+                color: darken(rgb(192, 205, 228), 5%);
+            }
+        }
+        p{
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            font-family: Prospekt;
+            letter-spacing: 2px;
+            color: rgb(255, 255, 255);
+            text-shadow: 4px 4px 60px white;
+            
+            font-size: 30px;
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        a{
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 38px;
+        background-color: rgb(15, 15, 15);
+        color: rgb(233, 230, 230);
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        font-family: Glenn;
+        border: 1.5px solid rgb(212, 212, 212);
+        padding: 15px 48px 15px 48px;
+        box-shadow: 2px 2px 150px rgba(255, 255, 255, 0.191);
+  
+ 
+            &:hover{
+                background-color: lighten(rgb(15, 15, 15), 6%);
+            }
+      
+        }
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        font-size: 35px;
+        a{
+            color: rgb(233, 237, 240);
+            margin-left: 20px;
+            margin-right: 20px;
+            &:hover{
+                color: darken(rgb(233, 237, 240), 15%);
+            }
+        }
+
+    }
+    .cp{
+        color: rgba(255, 255, 255, 0.513);
+        margin-top: 140px;
+        text-align: center;
+        font-family: Glenn;
+    }
+   }
+}
+// FONTS
+@font-face {
+    font-family: "Prospekt";
+    src: url("/font/Prospekt\ Regular.otf") format("woff2"),
+         
+  }
+  @font-face {
+    font-family: "Glenn";
+    src: url("/font/BwGlennSans-Regular.otf") format("woff2"),
+         
+  }
